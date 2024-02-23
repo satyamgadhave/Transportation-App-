@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".SplashScreen_Activity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/sign_up_truck"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Online Transportation World!!!"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="transportation, the movements of goods and persons from place to place and the various means by which such movements is accomplished  "
+        android:textStyle="italic"
+        android:textColor="@color/purple_500"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Create_profile_customer_provider">
+
+    <TextView
+        android:id="@+id/create_profile_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Profile As"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:textColor="@color/black"/>
+
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/customer_button"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="customer"
+
+        android:textColor="@color/text_color"
+        android:background="@color/background_color"
+        android:shadowColor="@color/shadow_color"
+        android:layout_gravity="center"
+        app:neumorph_shadowColorLight="@color/highlight"
+        app:neumorph_shadowColorDark="@color/shadow_color"/>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/provider_button"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="provider"
+
+        android:textColor="@color/text_color"
+        android:background="@color/background_color"
+        android:shadowColor="@color/shadow_color"
+        android:layout_gravity="center"
+        app:neumorph_shadowColorLight="@color/highlight"
+        app:neumorph_shadowColorDark="@color/shadow_color"/>
+
+
+
+
+
+</LinearLayout>

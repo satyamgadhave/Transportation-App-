@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SingUp_Activity">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_marginStart="100dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/sign_up_truck"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/edtusername"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Create Account"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account it takes less than a minutes.If you already have an account " />
+
+
+        <EditText
+            android:id="@+id/singup_firstname_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:hint="First Name"
+            android:paddingStart="05dp" />
+
+        <EditText
+            android:id="@+id/singup_lastname_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:hint="Last Name"
+
+            android:paddingStart="05dp"
+            tools:ignore="InvalidId" />
+
+
+        <EditText
+            android:id="@+id/signup_username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
+            android:hint="Username"
+            android:paddingStart="05dp" />
+
+        <EditText
+            android:id="@+id/signup_gmail_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:hint="Gmail"
+            android:paddingStart="05dp" />
+
+
+        <EditText
+            android:id="@+id/singup_passowrd_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            android:paddingStart="05dp" />
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+                <RadioButton
+                android:id="@+id/radioProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Provider"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+            <RadioButton
+                android:id="@+id/radioRequester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Requester"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+</LinearLayout>
+        </RadioGroup>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/signup_createaccount_button"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+
+            android:textColor="@color/text_color"
+            android:background="@color/background_color"
+            android:shadowColor="@color/shadow_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:neumorph_shadowColorLight="@color/highlight"
+            app:neumorph_shadowColorDark="@color/shadow_color"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+

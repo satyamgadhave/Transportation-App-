@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "153763523045",
+    "project_id": "transpotation-main-project",
+    "storage_bucket": "transpotation-main-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153763523045:android:c9e707e6085f2620cf270c",
+        "android_client_info": {
+          "package_name": "com.plutecoder.transpotation_main_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153763523045-52rle8feqcgd8oqg4pdnu56k9gjokgks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvBXAusA8wOaZ7Jh42otDQGV7-EmEnLsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153763523045-52rle8feqcgd8oqg4pdnu56k9gjokgks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

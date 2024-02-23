@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SingUp_Activity">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_marginStart="100dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/sign_up_truck"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/edtusername"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Login The Account"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account click on create account button it takes less than a minutes.If you already have an account username and passwoed write and click login" />
+
+
+
+
+        <EditText
+
+            android:id="@+id/login_gmail_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:hint="Gmail"
+            android:paddingStart="05dp" />
+
+
+
+        <EditText
+            android:id="@+id/login_password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            android:paddingStart="05dp" />
+
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/login_login_button"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+
+            android:textColor="@color/text_color"
+            android:background="@color/background_color"
+            android:shadowColor="@color/shadow_color"
+            android:layout_gravity="center"
+            app:neumorph_shadowColorLight="@color/highlight"
+            app:neumorph_shadowColorDark="@color/shadow_color"/>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/login_createaccount_button"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+
+            android:textColor="@color/text_color"
+            android:background="@color/background_color"
+            android:shadowColor="@color/shadow_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:neumorph_shadowColorLight="@color/highlight"
+            app:neumorph_shadowColorDark="@color/shadow_color"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+

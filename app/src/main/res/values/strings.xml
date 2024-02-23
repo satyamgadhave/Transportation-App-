@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Transpotation_Project1_Main</string>
+
+    <string-array name="Transpotation_Type">
+        <item>Customer</item>
+        <item>Truck</item>
+        <item>Mini Truck</item>
+        <item>Bus</item>
+        <item>Car</item>
+        <item>Bike</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

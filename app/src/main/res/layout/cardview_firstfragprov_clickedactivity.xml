@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ThirdFragment_Requister">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/text_addVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Vehicle"
+            android:textSize="30dp"
+
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/text_addVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicl_company_name"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="6dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Company Name: "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/VCompanyName_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicl_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_model"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Model: "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/VModel_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_fule_type"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Fuel Type: "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/VFuleType_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_fule_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_usedFor"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle for which service: "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/VUsedFor_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_usedFor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_capacity"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Capacity: "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/VCapacity_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_destiny"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Destiny Start: "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/Vdestinystart_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_destiny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_pickup"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Destiny End : "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/Vdestinyend_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_stay"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Visit Period : "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/Vstay_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_stay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/vehicle_contact"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact with Me : "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/Vcontact_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vehicle_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ac_nonac"
+            tools:ignore="UnknownId"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Journey With : "
+                android:textSize="20dp"/>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shadowColorLight="@color/highlight"
+                app:neumorph_shadowColorDark="@color/shadow_color"
+                app:neumorph_shapeType="flat"
+
+                >
+
+                <TextView
+                    android:id="@+id/VACNonAc_req"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/cursor"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+        </LinearLayout>
+        <soup.neumorphism.NeumorphButton
+            android:layout_below="@+id/ac_nonac"
+            android:id="@+id/btnconrid_button"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Confirem Your Ride"
+            android:textColor="@color/text_color"
+            android:background="@color/background_color"
+            android:shadowColor="@color/shadow_color"
+            app:neumorph_shadowColorLight="@color/highlight"
+            app:neumorph_shadowColorDark="@color/shadow_color" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

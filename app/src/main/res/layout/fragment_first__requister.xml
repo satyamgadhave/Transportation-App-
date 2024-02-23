@@ -1,0 +1,75 @@
+<!-- res/layout/recycler_view_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <!-- Add this EditText and Button above your RecyclerView -->
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:neumorph_shadowElevation="10dp"
+        app:neumorph_shadowColorLight="@color/shadow_color"
+        app:neumorph_shadowColorDark="@color/white"
+        app:neumorph_shapeType="flat"
+
+        >
+
+        <EditText
+            android:id="@+id/etStartingDestinationFilter"
+            android:hint="Filter by Starting Destination"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@drawable/cursor"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+
+        android:id="@+id/btnApplyFilter"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Apply Filter"
+        android:layout_gravity="end"
+        android:textColor="@color/text_color"
+        android:background="@color/background_color"
+        android:shadowColor="@color/shadow_color"
+
+        app:neumorph_shadowColorLight="@color/highlight"
+        app:neumorph_shadowColorDark="@color/shadow_color"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_requester_showdata_firstfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+    <com.plutecoder.transpotation_main_project.Animation_Button_Req_firstfragment
+        android:id="@+id/animationButton"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Book"
+       />
+
+
+</LinearLayout>
